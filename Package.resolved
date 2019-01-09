@@ -2,6 +2,15 @@
   "object": {
     "pins": [
       {
+        "package": "nio-h2",
+        "repositoryURL": "https://github.com/moritzsternemann/nio-h2",
+        "state": {
+          "branch": null,
+          "revision": "504a69e2b76a6173ceba63f817551712dcd55ac2",
+          "version": "0.1.0"
+        }
+      },
+      {
         "package": "swift-nio",
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
@@ -12,7 +21,7 @@
       },
       {
         "package": "swift-nio-http2",
-        "repositoryURL": "https://github.com/apple/swift-nio-http2.git",
+        "repositoryURL": "https://github.com/apple/swift-nio-http2",
         "state": {
           "branch": null,
           "revision": "d17462f586c3f2c9c12f81e37ed0d8a59ac9be1b",
@@ -25,6 +34,24 @@
         "state": {
           "branch": null,
           "revision": "324e323e92ab12e565d63bffb07b5833a63a425f",
+          "version": "1.0.0"
+        }
+      },
+      {
+        "package": "swift-nio-ssl",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl",
+        "state": {
+          "branch": null,
+          "revision": "db16c3a90b101bb53b26a58867a344ad428072e0",
+          "version": "1.3.2"
+        }
+      },
+      {
+        "package": "swift-nio-ssl-support",
+        "repositoryURL": "https://github.com/apple/swift-nio-ssl-support.git",
+        "state": {
+          "branch": null,
+          "revision": "c02eec4e0e6d351cd092938cf44195a8e669f555",
           "version": "1.0.0"
         }
       },
