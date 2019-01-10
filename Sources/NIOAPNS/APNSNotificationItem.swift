@@ -75,7 +75,7 @@ public enum APNSNotificationItem {
     case threadId(String)
     
     /// Custom payload for the notification.
-    case customPayload(String, Any)
+    case customPayload(String, Encodable)
     
     /// Allow modification of the notification by a notification service app extension.
     ///
