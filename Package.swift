@@ -10,7 +10,12 @@ let package = Package(
             targets: ["NIOAPNSExample"]),
         .library(
             name: "NIOAPNS",
-            targets: ["NIOAPNS"]),
+            targets: ["NIOAPNS"]
+        ),
+        .library(
+            name: "OpenSSL",
+            targets: ["OpenSSL"]
+        ),
     ],
     dependencies: [
       .package(url: "https://github.com/moritzsternemann/nio-h2", .upToNextMinor(from: "0.1.0")),
@@ -21,7 +26,16 @@ let package = Package(
             dependencies: ["NIOAPNS"]),
         .target(
             name: "NIOAPNS",
-            dependencies: ["NIOH2"]),
+            dependencies: ["NIOH2"]
+        ),
+        .systemLibrary(
+            name: "OpenSSL",
+            pkgConfig: "openssl",
+            providers: [
+                .apt(["openssl libssl-dev"]),
+                .brew(["openssl"]),
+            ]
+        ),
         .testTarget(
             name: "NIOAPNSTests",
             dependencies: ["NIOAPNS"]),
