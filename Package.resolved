@@ -11,6 +11,15 @@
         }
       },
       {
+        "package": "OpenSSL",
+        "repositoryURL": "https://github.com/IBM-Swift/OpenSSL",
+        "state": {
+          "branch": null,
+          "revision": "203bfc87d003acf285ce3222f0de32e027f63e4a",
+          "version": "2.2.1"
+        }
+      },
+      {
         "package": "swift-nio",
         "repositoryURL": "https://github.com/apple/swift-nio.git",
         "state": {
