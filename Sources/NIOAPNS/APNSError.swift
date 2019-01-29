@@ -13,8 +13,12 @@ public enum APNSError: Error {
 extension APNSError: LocalizedError {
     public var errorDescription: String? {
         switch self {
-        default:
-            fatalError()
+        case .invalidAuthTokenFormat:
+            return "Could not build JWT auth token."
+        case .invalidPrivateKey(let error):
+            return "The private key is invalid: \(error)."
+        case .signingFailed:
+            return "Internal signing error."
         }
     }
 }
