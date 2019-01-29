@@ -15,19 +15,23 @@ let package = Package(
         ),
     ],
     dependencies: [
-      .package(
-          url: "https://github.com/moritzsternemann/nio-h2",
-          .upToNextMinor(from: "0.1.0")
-      ),
-      .package(
-          url: "https://github.com/IBM-Swift/OpenSSL",
-          .upToNextMinor(from: "2.2.1")
-      )
+        .package(
+            url: "https://github.com/moritzsternemann/nio-h2",
+            .upToNextMinor(from: "0.1.0")
+        ),
+        .package(
+            url: "https://github.com/IBM-Swift/OpenSSL",
+            .upToNextMinor(from: "2.2.1")
+        ),
+        .package(
+            url: "https://github.com/apple/swift-package-manager",
+            from: "0.3.0"
+        ),
     ],
     targets: [
         .target(
             name: "NIOAPNSExample",
-            dependencies: ["NIOAPNS"]
+            dependencies: ["NIOAPNS", "Utility"]
         ),
         .target(
             name: "NIOAPNS",
